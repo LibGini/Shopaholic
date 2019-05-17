@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/md_black_1000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/button_back"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/action_ret" />
+
+        <TextView
+            android:id="@+id/hh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/button_search"
+            android:layout_toEndOf="@+id/button_back"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="Category"
+            android:textColor="@color/md_white_1000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/button_search"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/button_cart"
+            android:layout_weight="1"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/button_cart"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/category_share"
+            android:layout_weight="1"
+            android:src="@drawable/action_cart" />
+
+        <ImageButton
+            android:id="@+id/category_share"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:src="@drawable/action_more" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

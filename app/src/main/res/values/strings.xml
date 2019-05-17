@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Shopaholic</string>
+    <string name="trems1">We will send you One time SMS message</string>
+    <string name="carr">Carrier rate may apply</string>
+    <string name="verification_code_subtext">Please type the verification code sent to +xxxxxxxxxx</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="ot">We have sent you access code</string>
+    <string name="ol">Via SMS for your mobile number verification</string>
+    <string name="res">Didn\'t Recive the OTP?</string>
+    <string name="rese">Resend Code</string>
+    <string name="copyR"> © 2019- Shopaholic.com.\n All rights reserved</string>
+    <string name="coinsand"><![CDATA[Coins & Coupons]]></string>
+    <string name="hh">Stores You\'ll Love</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wemight">We will send you a one time sms message carrier rate may apply</string>
+</resources>

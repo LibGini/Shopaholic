@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/md_black_1000"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/button_search"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:src="@drawable/action_ret" />
+
+        <TextView
+            android:id="@+id/cat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/button_cart"
+            android:layout_toEndOf="@+id/button_search"
+            android:gravity="center|left"
+            android:textColor="@color/md_white_1000"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:id="@+id/button_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/category_share"
+            >
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cart"
+                    style="@style/Widget.AppCompat.ActionButton"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/action_cart" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/cart_nu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/badge_item_count"
+                android:text="0"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/category_share"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:src="@drawable/action_share" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

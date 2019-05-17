@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ourpicfragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_black_1000"
+                android:padding="10dp"
+                android:text="Only the best quality and Servive"
+                android:textColor="@color/md_white_1000"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/top" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/picked_u"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>

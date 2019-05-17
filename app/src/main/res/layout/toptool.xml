@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/md_black_1000"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/button_search"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:src="@drawable/action_ret" />
+
+        <TextView
+            android:id="@+id/hh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/button_cart"
+            android:layout_toEndOf="@+id/button_search"
+            android:gravity="center|left"
+            android:text="Top Selection"
+            android:textColor="@color/md_white_1000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/button_cart"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/category_share"
+            android:src="@drawable/action_cart" />
+
+        <ImageButton
+            android:actionProviderClass="android.widget.ShareActionProvider"
+            android:id="@+id/category_share"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:src="@drawable/action_share" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
